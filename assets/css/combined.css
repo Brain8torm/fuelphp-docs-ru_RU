@@ -121,6 +121,16 @@ h1, h2, h3, h4, h5, h6, th {
 
 }
 
+@font-face {
+    font-family: 'RobotoBold';
+	src:
+        url('../fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/Roboto-Bold.woff') format('woff'),
+        url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
 :focus{
 	outline: none;
 }
@@ -532,7 +542,7 @@ ol{
 }
 
 #main h2, #main h3, #main h4{
-	font-family: 'DroidSansBold';
+	font-family: 'RobotoBold';
 	font-weight: normal !important;
 }
 
