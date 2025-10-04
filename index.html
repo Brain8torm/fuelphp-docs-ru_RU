@@ -1,17 +1,19 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./assets/css/combined.css?20170912">
 	<link rel="shortcut icon" href="./favicon.ico" />
- 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
 	<script type="text/javascript">
 		var path = './';
 	</script>
 	<script src="./assets/js/combined.js?20170912"></script>
-	<title>FuelPHP Documentation</title>
+	<title>FuelPHP Документация</title>
 </head>
+
 <body>
 	<div id="container">
 		<header id="header">
@@ -21,81 +23,90 @@
 				</div>
 				<h1>
 					<a href="https://fuelphp.com"><img height="37px" width="147px" src="./assets/img/fuel.png" /></a>
-					<strong>Documentation</strong>
+					<strong>Документация</strong>
 				</h1>
 			</div>
 			<nav>
 				<div class="clear"></div>
 			</nav>
-			<a href="#" id="toc_handle">table of contents</a>
+			<a href="#" id="toc_handle">оглавление</a>
 			<div class="clear"></div>
 		</header>
 
 		<div id="main">
 
-			<h2>Welcome to FuelPHP</h2>
+			<h2>Добро пожаловать в FuelPHP</h2>
 
 			<p>
-				FuelPHP is a simple, flexible, community driven PHP 5 web framework. It was born out of the frustrations people have with the current available frameworks and developed
-				with support from a community of developers. FuelPHP is extremely portable, works on almost any server and prides itself on clean syntax.
+				FuelPHP - это простой, гибкий, сообщественно поддерживаемый фреймворк PHP 5 для веб-разработки. Он был
+				разработан в ответ на проблемы, с которыми сталкиваются другие существующие фреймворки, и создан с
+				поддержкой сообщества. FuelPHP очень портативен, работает на почти любом сервере и гордится чистым
+				синтаксисом.
 			</p>
 
-			<h3 id="quick_install">Quick Installation</h3>
+			<h3 id="quick_install">Быстрая установка</h3>
 
-			<p>If you value your time and want to get things up and running in seconds instead of minutes, you can use our quick installer instead. Using the <a href="http://en.wikipedia.org/wiki/CURL">curl</a> library, you can install a very basic version of oil. From there you can create new full applications of Fuel.</p>
+			<p>Если вы ценим время и хотите начать работу за несколько секунд вместо минут, вы можете использовать нашу
+				быструю установщик. Используя библиотеку <a href="http://en.wikipedia.org/wiki/CURL">curl</a>, вы можете
+				установить очень базовую версию oil. Затем вы можете создавать новые полноценные приложения Fuel.</p>
 
-			<pre class="cli"><code># quick install oil from the web
+			<pre class="cli"><code># быстрая установка oil с помощью curl
 $ curl https://get.fuelphp.com/oil | sh
-# now that oil is installed, create a blog project in a directory called Sites
+# теперь, когда oil установлен, создайте проект блога в каталоге Sites
 $ cd Sites/
 $ oil create blog</code></pre>
 
 			<p>
-				For more information, see the <a href="installation/instructions.html#command">installation</a> page.
+				для подробностей см. страницу <a href="installation/instructions.html#command">установки</a>.
 			</p>
 
-			<h3 id="manual_install">Manual Installation</h3>
+			<h3 id="manual_install">Ручная установка</h3>
 
 			<p>
-				If you can't use the quick installation method, you can also install FuelPHP manually.
-				You  will find detailed instructions on the <a href="installation/instructions.html#manual">installation</a> page.
+			Если вы не хотите использовать метод быстрой установки, вы можете установить FuelPHP вручную.
+				Подробную инструкцию вы можете найти на  странице <a
+					href="installation/instructions.html#manual">Установка</a>.
 			</p>
 
-			<h3 id="next_steps">Next steps</h3>
+			<h3 id="next_steps">Следующие шаги</h3>
 
 			<ul>
-				<li>Step #1: Read about <a href="general/mvc.html">the components</a> of a FuelPHP application</li>
-				<li>Step #2: <a href="general/configuration.html">Configure</a> your new FuelPHP installation</li>
-				<li>Step #3: Learn about <a href="general/modules.html">modules</a> and <a href="general/packages.html">packages</a></li>
-				<li>Step #4: <a href="general/controllers/base.html">Create some sexy code!</a></li>
+				<li>Шаг 1: Прочтите о <a href="general/mvc.html">компонентах</a> приложения FuelPHP</li>
+				<li>Шаг 2: <a href="general/configuration.html">Настройте</a> вашу новую установку FuelPHP</li>
+				<li>Шаг 3: Узнайте о <a href="general/modules.html">модулях</a> и <a
+						href="general/packages.html">пакетах</a></li>
+				<li>Шаг 4: <a href="general/controllers/base.html">Create some sexy code! Создайте красивый код!</a></li>
 			</ul>
 
-			<h3 id="docs_download">Offline docs</h3>
+			<h3 id="docs_download">Оффлайн документация</h3>
 
 			<p>
-				All the documentation is avaliable as a static download <a href="https://github.com/fuel/docs/archive/1.9/develop.zip" target="_blank">here</a>
+				All the documentation is avaliable as a static download Вся документация доступна для скачивания <a
+					href="https://github.com/fuel/docs/archive/1.9/develop.zip" target="_blank">здесь</a>
 			</p>
 
-			<h3 id="api_docs">Class API Documentation</h3>
+			<h3 id="api_docs">API документация</h3>
 
 			<p>
-				We provide full API documentation of all classes online.
+				Мы предоставляем полную документацию API по всем классам.
 			</p>
 
-			<h3 id="dev_docs">Development Branch Documentation</h3>
+			<h3 id="dev_docs">Документация ветки для разработки</h3>
 
 			<p>
-				This documentation reflects the state of the documentation at the time of the latest official FuelPHP release.
-				For documentation of Fuel's bleeding edge, see our <a href="http://www.fuelphp.com/dev-docs">Develop Branch Documentation</a>.
+				Эта документация отражает состояние документации во время последнего официального релиза FuelPHP.
+				Для ознакомления с последней версией документации, пожалуйста посетите <a href="http://www.fuelphp.com/dev-docs">Документацию ветки разработки</a>.
 			</p>
 
 		</div>
 
 		<footer>
 			<p>
-				&copy; FuelPHP Development Team 2010-2025 - <a href="https://fuelphp.com">FuelPHP</a> is released under the MIT license.
+				&copy; FuelPHP Development Team 2010-2025 - <a href="https://fuelphp.com">FuelPHP</a> is released under
+				the MIT license.
 			</p>
 		</footer>
 	</div>
 </body>
+
 </html>
