@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +11,9 @@
 		var path = './';
 	</script>
 	<script src="./assets/js/combined.js?20170912"></script>
-	<title>Requirements - FuelPHP Documentation</title>
+	<title>Требования - FuelPHP документация</title>
 </head>
+
 <body>
 	<div id="container">
 		<header id="header">
@@ -21,80 +23,86 @@
 				</div>
 				<h1>
 					<a href="https://fuelphp.com"><img height="37px" width="147px" src="./assets/img/fuel.png" /></a>
-					<strong>Documentation</strong>
+					<strong>Документация</strong>
 				</h1>
 			</div>
 			<nav>
 				<div class="clear"></div>
 			</nav>
-			<a href="#" id="toc_handle">table of contents</a>
+			<a href="#" id="toc_handle">оглавление</a>
 			<div class="clear"></div>
 		</header>
 
 		<div id="main">
 
-			<h2>Requirements</h2>
-			<h5 id="web_server">Web Server</h5>
+			<h2>Требования</h2>
+			<h5 id="web_server">Веб-сервер</h5>
 			<ul>
-				<li>Any web server.  Fuel has been tested on Apache, IIS and Nginx.</li>
-				<li>Works on all major operating systems including *nix and Windows.</li>
+				<li>Любой веб-сервер. FuelPHP был протестирован на Apache, IIS и Nginx.</li>
+				<li>Работает со всеми основными операционными системами, включая *NIX и Windows.</li>
 			</ul>
-			<h5 id="php_version">PHP Version</h5>
+			<h5 id="php_version">Версия PHP</h5>
 			<ul>
-				<li>Version 5.3.3 or greater is required. PHP 7 is fully supported.</li>
+				<li>Необходима версия 5.3.3 или новее. PHP 7 полностью поддерживается.</li>
 			</ul>
-			<h5 id="php_extensions">PHP Extensions</h5>
+			<h5 id="php_extensions">PHP расширения</h5>
 			<p>
-				Fuel uses functionality that PHP defines as "extensions". To avoid any possible compatibility issues, Fuel only uses extensions that
-				are part of the PHP code as documented on the <a href="http://php.net">PHP website</a>. If extensions are used that are part of the
-				PECL repository (which need to be installed manually by a system administrator), Fuel will use them if present, and work around it if not.
+				Fuel использует функциональность, которую PHP определяет как «расширения». Чтобы избежать возможных
+				проблем совместимости, Fuel использует только расширения, которые являются частью кода PHP, как описано
+				на <a href="http://php.net">сайте PHP</a>. Если используются расширения, являющиеся частью репозитория
+				PECL (которые должны быть установлены вручную системным администратором), Fuel будет использовать их,
+				если они присутствуют, и обойти их, если нет.
 			</p>
-			<p>This is a list of extensions used, and the classes that use them:</p>
+			<p>Это список используемых расширений и классы, которые их используют:</p>
 			<table class="config valign">
 				<tbody>
 					<tr>
-						<th class="small">Extension</th>
-						<th class="small">Used in</th>
-						<th>Comments</th>
+						<th class="small">Расширение</th>
+						<th class="small">Используется в</th>
+						<th>Комментарии</th>
 					</tr>
 					<tr>
 						<td>fileinfo</td>
 						<td>Upload</td>
-						<td><a href="http://php.net/manual/en/book.fileinfo.php">Documentation</a>.<br />
-						Note that on Windows platforms, a manual installation of a DLL might be needed.</td>
+						<td><a href="http://php.net/manual/en/book.fileinfo.php">Документация</a>.<br />
+							Обратите внимание, что на платформах Windows может потребоваться ручная установка DLL.</td>
 					</tr>
 					<tr>
 						<td>mbstring</td>
-						<td>n/a</td>
-						<td><a href="http://php.net/manual/en/book.mbstring.php">Documentation</a>.<br />
-						If not present, the framework has no multibyte support. You can check the MBSTRING constant to see if your installation has multibyte support enabled.</td>
+						<td>н/д</td>
+						<td><a href="http://php.net/manual/en/book.mbstring.php">Документация</a>.<br />
+							Если его нет, фреймворк не поддерживает многобайтовые символы. Вы можете проверить константу
+							MBSTRING, чтобы узнать, включена ли в вашей установке поддержка многобайтовых символов.</td>
 					</tr>
 					<tr>
 						<td>mcrypt</td>
 						<td>Crypt</td>
-						<td><a href="http://php.net/manual/en/book.mcrypt.php">Documentation</a>.<br />
-						If not present, PHPSecLib is used to emulate its functionality.</td>
+						<td><a href="http://php.net/manual/en/book.mcrypt.php">Документация</a>.<br />
+							Если его нет, для эмуляции его функциональности используется PHPSecLib.</td>
 					</tr>
 				</tbody>
 			</table>
 			<h5 id="php_unit">PHPUnit</h5>
 			<ul>
-				<li><a href="http://phpunit.de/manual/current/en/index.html">PHPUnit</a> version 3.7 or greater is required if you want to run unit tests.</li>
+				<li><a href="http://phpunit.de/manual/current/en/index.html">PHPUnit</a> версии 3.7 или выше необходим,
+					если вы хотите запускать модульные тесты.</li>
 			</ul>
 
-			<h3 id="recommended">Recommended</h3>
+			<h3 id="recommended">Рекомендуемые</h3>
 			<ul>
-				<li>Web Server - Apache 2.4+, running on *nix.</li>
-				<li>mod_rewrite - To remove the index.php from the URL.</li>
+				<li>Веб-сервер - Apache 2.4+, запущенный на *nix.</li>
+				<li>mod_rewrite - для удаления index.php из URL.</li>
 			</ul>
 
 		</div>
 
 		<footer>
 			<p>
-				&copy; FuelPHP Development Team 2010-2025 - <a href="https://fuelphp.com">FuelPHP</a> is released under the MIT license.
+				&copy; FuelPHP Development Team 2010-2025 - <a href="https://fuelphp.com">FuelPHP</a> is released under
+				the MIT license.
 			</p>
 		</footer>
 	</div>
 </body>
+
 </html>
